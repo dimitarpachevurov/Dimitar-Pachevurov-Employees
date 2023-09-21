@@ -8,7 +8,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        string csvFilePath = "employee_projects.csv"; // Replace with your CSV file path
+        Console.WriteLine("Enter a filename:");
+        string csvFilePath = Console.ReadLine();
         List<EmployeeProject> employeeProjects = LoadDataFromCsv(csvFilePath);
 
         var longestWorkingPair = FindLongestWorkingPair(employeeProjects);
